@@ -76,6 +76,7 @@ class App {
         labelScore.textContent = this.#score
     }
     #reset() {
+        secretNumberOverlay.textContent = `?`
         this.#secretNumber = Math.floor(Math.random() * 20) + 1
         document.body.style.backgroundColor = `#222`
         secretNumberOverlay.style.width = `15rem`
